@@ -5,24 +5,24 @@
   
   <!-- Main Homepage -->
   <url>
-    <loc>https://borewell-workshop.vercel.app/</loc>
+    <loc>https://sri-vellingiri.vercel.app/</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://borewell-workshop.vercel.app/#home" />
-    <xhtml:link rel="alternate" hreflang="ta" href="https://borewell-workshop.vercel.app/#home" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://borewell-workshop.vercel.app/#home" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://borewell-workshop.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sri-vellingiri.vercel.app/#home" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://sri-vellingiri.vercel.app/#home" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sri-vellingiri.vercel.app/#home" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sri-vellingiri.vercel.app/" />
     <image:image>
-      <image:loc>https://borewell-workshop.vercel.app/assets/images/logo.png</image:loc>
-      <image:title>Sri Vellingiri Engineering Works - Nathan Proprietor</image:title>
+      <image:loc>https://sri-vellingiri.vercel.app/assets/images/logo.png</image:loc>
+      <image:title>Sri Vellingiri Nathan Borewells</image:title>
       <image:caption>Heavy Lathe Works &amp; Borewell Rig Service Workshop</image:caption>
     </image:image>
   </url>
 
   <!-- Services Section -->
   <url>
-    <loc>https://borewell-workshop.vercel.app/#services</loc>
+    <loc>https://sri-vellingiri.vercel.app/#services</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -30,7 +30,7 @@
 
   <!-- Gallery Section -->
   <url>
-    <loc>https://borewell-workshop.vercel.app/#gallery</loc>
+    <loc>https://sri-vellingiri.vercel.app/#gallery</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -38,7 +38,7 @@
 
   <!-- Service Request Booking Section -->
   <url>
-    <loc>https://borewell-workshop.vercel.app/#service-request</loc>
+    <loc>https://sri-vellingiri.vercel.app/#service-request</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -46,7 +46,7 @@
 
   <!-- About Us Section -->
   <url>
-    <loc>https://borewell-workshop.vercel.app/#about</loc>
+    <loc>https://sri-vellingiri.vercel.app/#about</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -54,7 +54,7 @@
 
   <!-- Contact Us Section -->
   <url>
-    <loc>https://borewell-workshop.vercel.app/#contact</loc>
+    <loc>https://sri-vellingiri.vercel.app/#contact</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -339,13 +339,13 @@
 
   <!-- Main Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+    <div class="container-fluid px-xl-4 px-lg-3 px-2">
+      <a class="navbar-brand d-flex align-items-center me-2 me-xl-3" href="#home">
         <img src="assets/images/logo.png" alt="Sri Vellingiri Nathan Borewells" class="brand-logo-img" />
       </a>
 
       <!-- Mobile Controls & Toggle -->
-      <div class="d-flex align-items-center gap-2 d-lg-none">
+      <div class="d-flex align-items-center gap-1 gap-sm-2 d-lg-none">
         <button class="theme-toggle-btn" id="themeToggleBtnMobile" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Light/Dark Theme">
           <i class="bi bi-moon-stars-fill"></i>
         </button>
@@ -354,14 +354,14 @@
           <option value="ta">தமிழ்</option>
           <option value="hi">हिन्दी</option>
         </select>
-        <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0 p-1 ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
 
       <!-- Nav Links -->
       <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1 gap-xl-2">
           <li class="nav-item">
             <a class="nav-link active" href="#home" data-i18n="nav_home">Home</a>
           </li>
@@ -386,12 +386,12 @@
         </ul>
 
         <!-- Right Side: Language Switcher & Action Buttons -->
-        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
-          <button class="theme-toggle-btn d-none d-lg-inline-flex me-1" id="themeToggleBtn" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Light/Dark Theme">
+        <div class="d-flex align-items-center gap-1 gap-xl-2 mt-3 mt-lg-0">
+          <button class="theme-toggle-btn d-none d-lg-inline-flex" id="themeToggleBtn" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Light/Dark Theme">
             <i class="bi bi-moon-stars-fill"></i>
           </button>
 
-          <div class="d-none d-lg-block me-1">
+          <div class="d-none d-lg-block">
             <select class="lang-selector" id="langSelect" aria-label="Select Language">
               <option value="en">🇬🇧 English</option>
               <option value="ta">🇮🇳 தமிழ்</option>

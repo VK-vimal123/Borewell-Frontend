@@ -4,7 +4,7 @@
 const translations = {
   en: {
     // Navigation
-    nav_brand_title: "Sri Vellingiri Engineering Works",
+    nav_brand_title: "Sri Vellingiri Nathan Borewells",
     nav_brand_subtitle: "Borewell & Workshop Services",
     nav_owner_badge: "Nathan",
     nav_home: "Home",
@@ -18,8 +18,8 @@ const translations = {
     nav_whatsapp_btn: "WhatsApp",
 
     // Hero Section
-    hero_badge: "Nathan: 93446 04042 | Borewell Engineering Workshop",
-    hero_title: "Precision Borewell Rig Repair & Heavy Workshop Services",
+    hero_badge: "Sri Vellingiri Nathan Borewells | Nathan: 93446 04042",
+    hero_title: "Sri Vellingiri Nathan Borewells - Precision Rig Repair & Heavy Workshop",
     hero_desc: "Specialized in heavy lathe turning, rig structural welding, hydraulic cylinder overhauls, drilling rod threading, and high-pressure compressor maintenance. Managed with decades of practical field expertise by Nathan.",
     hero_btn_request: "Book Service / Get Estimate",
     hero_btn_call_nathan: "Call Nathan: 93446 04042",
@@ -42,7 +42,7 @@ const translations = {
     // About Us Section
     about_badge: "About Our Workshop",
     about_title: "Practical Engineering & Borewell Rig Maintenance",
-    about_lead: "Sri Vellingiri Engineering Works, founded and managed by Nathan, is a dedicated heavy mechanical workshop specializing in complete borewell rig repairs, lathe works, structural welding, and drill pipe engineering.",
+    about_lead: "Sri Vellingiri Nathan Borewells, founded and managed by Nathan, is a dedicated heavy mechanical workshop specializing in complete borewell rig repairs, lathe works, structural welding, and drill pipe engineering.",
     about_p1: "Located in the heart of the borewell operational belt, our workshop is outfitted with heavy bed center lathes, hydraulic presses, precision boring tools, and high-capacity welding units. We understand the demanding conditions under which drilling contractors operate and provide prompt, heavy-duty engineering solutions.",
     about_p2: "From single drill rod thread restoration to complete rig mast rebuilds and compressor servicing, every job is handled by skilled machinists and certified welders under Nathan's direct technical supervision using industrial-grade materials and strict dimensional checks.",
     about_feat_1_title: "Heavy-Duty Machinery",
@@ -111,7 +111,7 @@ const translations = {
     contact_whatsapp_title: "WhatsApp Chat Support",
     contact_whatsapp_text: "Chat on WhatsApp",
     contact_address_title: "Workshop Address",
-    contact_address_val: "Sri Vellingiri Engineering Works, SF No. 142/2, Main Road, Near Industrial Estate, Tiruchengode / Namakkal Highway, Tamil Nadu - 637211, India.",
+    contact_address_val: "Sri Vellingiri Nathan Borewells, SF No. 142/2, Main Road, Near Industrial Estate, Tiruchengode / Namakkal Highway, Tamil Nadu - 637211, India.",
     contact_hours_title: "Working Hours",
     contact_hours_val: "Monday – Saturday: 8:00 AM to 9:00 PM\nSunday: On Call for Emergency Breakdown Only",
     contact_map_btn: "Open in Google Maps",
@@ -121,11 +121,11 @@ const translations = {
     footer_quick_links: "Quick Links",
     footer_services_list: "Workshop Services",
     footer_contact_info: "Workshop Location",
-    footer_copyright: "© Sri Vellingiri Engineering Works. All rights reserved.",
+    footer_copyright: "© Sri Vellingiri Nathan Borewells. All rights reserved.",
     footer_developer_note: "Designed with Node.js, Express, MongoDB & Bootstrap.",
 
     // Top Bar & Nav additions
-    topbar_proprietor: "<strong class=\"text-white\">Nathan</strong> (Proprietor)",
+    topbar_proprietor: "<strong class=\"text-white\">Nathan</strong> (Sri Vellingiri Nathan Borewells)",
     topbar_location: "Tiruchengode / Namakkal Highway, Tamil Nadu",
     topbar_hours: "Mon - Sat: 8 AM - 9 PM",
     topbar_call: "Nathan: 93446 04042",
@@ -159,7 +159,7 @@ const translations = {
     req_direct_contact: "Direct Contact:",
 
     // Contact & Footer additions
-    contact_proprietor_role: "Proprietor / Workshop Head",
+    contact_proprietor_role: "Proprietor / Managing Head",
     contact_call_btn: "Call Nathan",
     footer_proprietor: "Proprietor: NATHAN",
     footer_hours_text: "8:00 AM - 9:00 PM (Mon - Sat)",
@@ -168,7 +168,7 @@ const translations = {
     // Owner Portal & Dynamic Card badges
     owner_portal_btn: "Owner Portal",
     owner_active_btn: "Owner: Nathan",
-    engineering_works_tag: "Engineering Works",
+    engineering_works_tag: "Sri Vellingiri Nathan Borewells",
     gallery_view_details: "Click to View Details",
     modal_owner_auth: "Owner Authentication",
     modal_owner_pin_prompt: "Please enter your workshop Owner PIN to manage gallery photos.",
@@ -179,8 +179,8 @@ const translations = {
     faq_badge: "Common Inquiries",
     faq_title: "Frequently Asked Questions",
     faq_desc: "Clear answers regarding our borewell rig engineering, heavy lathe operations, drilling rod threading, and workshop appointments.",
-    faq_q1: "What borewell rig services does Nathan / Sri Vellingiri Engineering Works provide?",
-    faq_a1: "We specialize in complete borewell rig overhauls, heavy lathe turning, spindle & shaft machining, hydraulic mast cylinder overhauls, high-tensile structural welding, 4.5\" and 6\" drilling rod API threading & straightening, and high-pressure compressor maintenance.",
+    faq_q1: "What borewell rig services does Sri Vellingiri Nathan Borewells provide?",
+    faq_a1: "Sri Vellingiri Nathan Borewells specializes in complete borewell rig overhauls, heavy lathe turning, spindle & shaft machining, hydraulic mast cylinder overhauls, high-tensile structural welding, 4.5\" and 6\" drilling rod API threading & straightening, and high-pressure compressor maintenance.",
     faq_q2: "How quickly can emergency breakdown or drilling rod repairs be completed?",
     faq_a2: "We prioritize urgent breakdown jobs to ensure drilling rigs resume operations quickly. Standard rod threading, adaptor fabrication, and lathe machining are typically completed within 24 to 48 hours.",
     faq_q3: "Do you machine standard API Regular and IF threads for all drill pipe sizes?",
@@ -193,7 +193,7 @@ const translations = {
 
   ta: {
     // Navigation
-    nav_brand_title: "ஸ்ரீ வெள்ளிங்கிரி இன்ஜினியரிங் ஒர்க்ஸ்",
+    nav_brand_title: "ஸ்ரீ வெள்ளிங்கிரி நாதன் போர்வெல்ஸ்",
     nav_brand_subtitle: "போர்வெல் ரிக் & பட்டறை சேவைகள்",
     nav_owner_badge: "நாதன்",
     nav_home: "முகப்பு",
@@ -207,8 +207,8 @@ const translations = {
     nav_whatsapp_btn: "வாட்ஸ்அப்",
 
     // Hero Section
-    hero_badge: "நாதன்: 93446 04042 | போர்வெல் இன்ஜினியரிங் பட்டறை",
-    hero_title: "துல்லியமான போர்வெல் ரிக் பழுதுபார்ப்பு & கனரக லேத் வேலைகள்",
+    hero_badge: "ஸ்ரீ வெள்ளிங்கிரி நாதன் போர்வெல்ஸ் | நாதன்: 93446 04042",
+    hero_title: "ஸ்ரீ வெள்ளிங்கிரி நாதன் போர்வெல்ஸ் - ரிக் பழுதுபார்ப்பு & கனரக லேத் வேலைகள்",
     hero_desc: "கனரக லேத் டர்னிங், ரிக் மாஸ்ட் வெல்டிங், ஹைட்ராலிக் சிலிண்டர் சீரமைப்பு, டிரில்லிங் ராடு த்ரெட் கட்டிங் மற்றும் உயர் அழுத்த கம்ப்ரஸர் சர்வீஸ் வேலைகள் நாதன் அவர்களின் மேற்பார்வையில் சிறந்த முறையில் செய்து தரப்படும்.",
     hero_btn_request: "சர்வீஸ் பதிவு செய்க",
     hero_btn_call_nathan: "நாதன்: 93446 04042",
@@ -231,7 +231,7 @@ const translations = {
     // About Us Section
     about_badge: "எங்கள் பட்டறை பற்றி",
     about_title: "நடைமுறை இன்ஜினியரிங் மற்றும் போர்வெல் ரிக் பராமரிப்பு",
-    about_lead: "ஸ்ரீ வெள்ளிங்கிரி இன்ஜினியரிங் ஒர்க்ஸ், திரு. நாதன் அவர்களின் வழிகாட்டுதலில் போர்வெல் ரிக் பழுதுபார்ப்பு, லேத் தயாரிப்புகள், கட்டமைப்பு வெல்டிங் மற்றும் டிரில்லிங் பைப் வேலைகளில் பிரத்யேக அனுபவம் கொண்ட பட்டறையாகும்.",
+    about_lead: "ஸ்ரீ வெள்ளிங்கிரி நாதன் போர்வெல்ஸ், திரு. நாதன் அவர்களின் வழிகாட்டுதலில் போர்வெல் ரிக் பழுதுபார்ப்பு, லேத் தயாரிப்புகள், கட்டமைப்பு வெல்டிங் மற்றும் டிரில்லிங் பைப் வேலைகளில் பிரத்யேக அனுபவம் கொண்ட பட்டறையாகும்.",
     about_p1: "போர்வெல் தொழிலின் மையப்பகுதியில் அமைந்துள்ள எங்கள் பட்டறையில் கனரக லேத் இயந்திரங்கள், ஹைட்ராலிக் பிரஸ்கள், துல்லியமான போரிங் கருவிகள் மற்றும் உயர்தர வெல்டிங் இயந்திரங்கள் உள்ளன. ரிக் உரிமையாளர்களின் களத் தேவைகளைப் புரிந்து கொண்டு தரமான உழைப்பை வழங்குகிறோம்.",
     about_p2: "ஒற்றை டிரில்லிங் ராடு த்ரெட் சரிசெய்தல் முதல் முழுமையான ரிக் மாஸ்ட் புதுப்பித்தல் மற்றும் கம்ப்ரஸர் சர்வீஸ் வரை அனைத்து வேலைகளும் அனுபவம் வாய்ந்த மெக்கானிக்குகள் மற்றும் வெல்டர்களால் துல்லியமாக செய்யப்படுகிறது.",
     about_feat_1_title: "கனரக இயந்திர வசதிகள்",
@@ -300,7 +300,7 @@ const translations = {
     contact_whatsapp_title: "வாட்ஸ்அப் ஆதரவு",
     contact_whatsapp_text: "வாட்ஸ்அப்பில் பேச",
     contact_address_title: "பட்டறை முகவரி",
-    contact_address_val: "ஸ்ரீ வெள்ளிங்கிரி இன்ஜினியரிங் ஒர்க்ஸ், கதவு எண். 142/2, மெயின் ரோடு, தொழிற்பேட்டை அருகில், திருச்செங்கோடு / நாமக்கல் ஹைவே, தமிழ்நாடு - 637211, இந்தியா.",
+    contact_address_val: "ஸ்ரீ வெள்ளிங்கிரி நாதன் போர்வெல்ஸ், கதவு எண். 142/2, மெயின் ரோடு, தொழிற்பேட்டை அருகில், திருச்செங்கோடு / நாமக்கல் ஹைவே, தமிழ்நாடு - 637211, இந்தியா.",
     contact_hours_title: "வேலை நேரம்",
     contact_hours_val: "திங்கள் – சனி: காலை 8:00 முதல் இரவு 9:00 வரை\nஞாயிறு: அவசர பிரேக்டவுன் அழைப்புகளுக்கு மட்டும்",
     contact_map_btn: "கூகிள் வரைபடத்தில் பார்க்க",
@@ -310,11 +310,11 @@ const translations = {
     footer_quick_links: "முக்கிய இணைப்புகள்",
     footer_services_list: "பட்டறை சேவைகள்",
     footer_contact_info: "பட்டறை இருப்பிடம்",
-    footer_copyright: "© ஸ்ரீ வெள்ளிங்கிரி இன்ஜினியரிங் ஒர்க்ஸ். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+    footer_copyright: "© ஸ்ரீ வெள்ளிங்கிரி நாதன் போர்வெல்ஸ். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
     footer_developer_note: "Node.js, Express, MongoDB மற்றும் Bootstrap மூலம் உருவாக்கப்பட்டது.",
 
     // Top Bar & Nav additions
-    topbar_proprietor: "<strong class=\"text-white\">நாதன்</strong> (உரிமையாளர்)",
+    topbar_proprietor: "<strong class=\"text-white\">நாதன்</strong> (ஸ்ரீ வெள்ளிங்கிரி நாதன் போர்வெல்ஸ்)",
     topbar_location: "திருச்செங்கோடு / நாமக்கல் நெடுஞ்சாலை, தமிழ்நாடு",
     topbar_hours: "திங்கள் - சனி: காலை 8 - இரவு 9:00",
     topbar_call: "நாதன்: 93446 04042",
@@ -357,7 +357,7 @@ const translations = {
     // Owner Portal & Dynamic Card badges
     owner_portal_btn: "உரிமையாளர் தளம்",
     owner_active_btn: "உரிமையாளர்: நாதன்",
-    engineering_works_tag: "இன்ஜினியரிங் பணிகள்",
+    engineering_works_tag: "ஸ்ரீ வெள்ளிங்கிரி நாதன் போர்வெல்ஸ்",
     gallery_view_details: "விவரங்களை பார்க்க அழுத்தவும்",
     modal_owner_auth: "உரிமையாளர் உள்நுழைவு",
     modal_owner_pin_prompt: "புகைப்படங்களை நிர்வகிக்க உங்கள் பட்டறை உரிமையாளர் பின் (PIN) எண்ணை உள்ளிடவும்.",
@@ -368,7 +368,7 @@ const translations = {
     faq_badge: "அடிக்கடி கேட்கப்படும் கேள்விகள்",
     faq_title: "பொதுவான சந்தேகங்களும் பதில்களும்",
     faq_desc: "எங்கள் பட்டறை சேவைகள், லேத் வேலைகள், ராடு த்ரெட்டிங் மற்றும் நேரடி புக் செய்தல் பற்றிய விவரங்கள்.",
-    faq_q1: "நாதன் / ஸ்ரீ வெள்ளிங்கிரி பட்டறையில் என்னென்ன போர்வெல் சேவைகள் வழங்கப்படுகின்றன?",
+    faq_q1: "ஸ்ரீ வெள்ளிங்கிரி நாதன் போர்வெல்ஸ் பட்டறையில் என்னென்ன சேவைகள் வழங்கப்படுகின்றன?",
     faq_a1: "கனரக லேத் டர்னிங், ஸ்பிண்டில் மெஷினிங், ரிக் மாஸ்ட் ஆர்க்/எம்ஐஜி வெல்டிங், ஹைட்ராலிக் சிலிண்டர் சீரமைப்பு, 4.5\" மற்றும் 6\" டிரில்லிங் ராடு API த்ரெட் கட்டிங் மற்றும் உயர் அழுத்த கம்ப்ரஸர் பராமரிப்பு சேவைகள் வழங்கப்படுகின்றன.",
     faq_q2: "அவசர பிரேக்டவுன் மற்றும் டிரில்லிங் ராடு வேலைகள் எவ்வளவு விரைவில் செய்து தரப்படும்?",
     faq_a2: "டிரில்லிங் தாமதத்தை குறைக்க அவசர வேலைகளுக்கு முன்னுரிமை அளிக்கப்படுகிறது. பொதுவாக ராடு த்ரெட் கட்டிங் மற்றும் லேத் வேலைகள் 24 முதல் 48 மணி நேரத்திற்குள் செய்து தரப்படும்.",

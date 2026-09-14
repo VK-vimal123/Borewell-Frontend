@@ -1,13 +1,14 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "routes": [
+  "rewrites": [
     {
-      "handle": "filesystem"
+      "source": "/api/:path*",
+      "destination": "https://borewell-be.vercel.app/api/:path*"
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

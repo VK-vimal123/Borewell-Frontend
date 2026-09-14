@@ -1571,3 +1571,343 @@ a:hover {
   background-color: #f1f5f9 !important;
 }
 
+/* ==========================================================================
+   FAQ Section Styles
+   ========================================================================== */
+.faq-section {
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.custom-faq-accordion .accordion-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md) !important;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.custom-faq-accordion .accordion-item:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-md);
+}
+
+.custom-faq-accordion .accordion-button {
+  background-color: var(--bg-card);
+  color: var(--text-white);
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 1.15rem 1.4rem;
+  border: none;
+  box-shadow: none;
+}
+
+.custom-faq-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--bg-card-hover);
+  color: var(--accent-amber-bright);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.custom-faq-accordion .accordion-button::after {
+  filter: invert(1) brightness(0.9);
+  transition: transform 0.25s ease;
+}
+
+.custom-faq-accordion .accordion-button:not(.collapsed)::after {
+  filter: invert(65%) sepia(85%) saturate(850%) hue-rotate(360deg);
+}
+
+.custom-faq-accordion .accordion-body {
+  background-color: var(--bg-card-subtle);
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.7;
+  padding: 1.25rem 1.4rem;
+}
+
+/* Light Mode for FAQ */
+[data-theme="light"] .faq-section {
+  background-color: #f1f5f9;
+  border-color: #e2e8f0;
+}
+
+[data-theme="light"] .custom-faq-accordion .accordion-item {
+  background-color: #ffffff;
+  border-color: #cbd5e1;
+}
+
+[data-theme="light"] .custom-faq-accordion .accordion-button {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+[data-theme="light"] .custom-faq-accordion .accordion-button:not(.collapsed) {
+  background-color: #fef3c7;
+  color: #92400e;
+  border-bottom-color: #fde68a;
+}
+
+[data-theme="light"] .custom-faq-accordion .accordion-button::after {
+  filter: none;
+}
+
+[data-theme="light"] .custom-faq-accordion .accordion-body {
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+/* ==========================================================================
+   Comprehensive Responsive System (Laptop, Tablet, Mobile)
+   ========================================================================== */
+
+/* 1. Laptop & Large Screens (min-width: 992px) */
+@media (min-width: 992px) {
+  .hero-section {
+    padding: 5rem 0 4.5rem;
+  }
+  .hero-title {
+    font-size: 2.85rem;
+    line-height: 1.22;
+  }
+  .services-section,
+  .gallery-section,
+  .request-section,
+  .about-section,
+  .contact-section,
+  .faq-section {
+    padding: 5rem 0;
+  }
+}
+
+/* 2. Tablets (min-width: 768px) and (max-width: 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-section {
+    padding: 3.5rem 0;
+    text-align: left;
+  }
+  .hero-title {
+    font-size: 2.25rem;
+    line-height: 1.25;
+  }
+  .hero-image-box {
+    margin-top: 1.5rem;
+  }
+  .services-section,
+  .gallery-section,
+  .request-section,
+  .about-section,
+  .contact-section,
+  .faq-section {
+    padding: 3.75rem 0;
+  }
+  .gallery-filters {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .gallery-filters::-webkit-scrollbar {
+    height: 4px;
+  }
+  .gallery-filters::-webkit-scrollbar-thumb {
+    background: var(--border-highlight);
+    border-radius: 4px;
+  }
+  .navbar-nav {
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
+
+/* 3. Mobile Devices (max-width: 767.98px) */
+@media (max-width: 767.98px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  /* Navigation & Top bar */
+  .navbar-custom {
+    padding: 0.5rem 0;
+  }
+  .brand-logo-img {
+    width: 78px;
+    max-height: 65px;
+  }
+  .navbar-collapse {
+    background-color: var(--bg-surface);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    margin-top: 0.75rem;
+    border: 1px solid var(--border-card);
+    box-shadow: var(--shadow-lg);
+  }
+  [data-theme="light"] .navbar-collapse {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+  }
+  .nav-link {
+    padding: 0.65rem 1rem !important;
+    text-align: left;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .nav-item:last-child .nav-link {
+    border-bottom: none;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 2.5rem 0 2rem;
+    text-align: left;
+  }
+  .hero-badge-industrial {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.75rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  .hero-title {
+    font-size: clamp(1.7rem, 6.5vw, 2.2rem);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+  .hero-lead {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .hero-section .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  /* Stats Card */
+  .hero-stats-card {
+    padding: 1rem;
+    margin-top: 1.25rem;
+  }
+  .hero-stat-number {
+    font-size: 1.25rem;
+  }
+  .hero-stat-label {
+    font-size: 0.7rem;
+  }
+
+  /* Sections Spacing */
+  .services-section,
+  .gallery-section,
+  .request-section,
+  .about-section,
+  .contact-section,
+  .faq-section {
+    padding: 3rem 0;
+  }
+
+  /* Section Titles */
+  h2 {
+    font-size: 1.65rem;
+  }
+  .section-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.65rem;
+  }
+
+  /* Horizontal Filter Pills for Gallery */
+  .gallery-filters {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    gap: 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+  .gallery-filters::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  .gallery-filters .filter-btn {
+    flex-shrink: 0;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.82rem;
+  }
+
+  /* Forms & Touch Targets (Prevent iOS Zoom with 16px font size) */
+  .form-control,
+  .form-select {
+    font-size: 16px !important;
+    padding: 0.7rem 0.9rem;
+  }
+  .request-card {
+    padding: 1.5rem;
+  }
+  .request-info-side {
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  /* Contact Cards */
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  /* Floating Actions */
+  .floating-actions {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    gap: 10px;
+    z-index: 1050;
+  }
+  .floating-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.35rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Footer */
+  .footer-main {
+    padding: 3rem 0 1.5rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  /* Modals */
+  .modal-dialog {
+    margin: 0.75rem;
+  }
+}
+
+/* 4. Small Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  .hero-stats-card .hero-stat-item {
+    padding: 0.25rem;
+  }
+  .hero-stat-number {
+    font-size: 1.1rem;
+  }
+  .action-strip {
+    padding: 0.85rem 0;
+  }
+  .custom-faq-accordion .accordion-button {
+    font-size: 0.95rem;
+    padding: 0.9rem 1rem;
+  }
+  .custom-faq-accordion .accordion-body {
+    font-size: 0.88rem;
+    padding: 1rem;
+  }
+}
+
+

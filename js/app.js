@@ -2,7 +2,11 @@
 // Multi-language Support, Interactive UI, Service Booking, & Owner Work Gallery System
 
 document.addEventListener('DOMContentLoaded', () => {
-  let currentLang = localStorage.getItem('sri_vellingiri_lang') || 'en';
+  const urlLang = new URLSearchParams(window.location.search).get('lang');
+  let currentLang = (urlLang && ['en', 'ta', 'hi'].includes(urlLang)) 
+    ? urlLang 
+    : (localStorage.getItem('sri_vellingiri_lang') || 'en');
+
   let cachedServices = [];
   let cachedGallery = [];
   let activeGalleryCategory = 'all';

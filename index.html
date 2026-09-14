@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sri Vellingiri Engineering Works - Proprietor: Nathan. Specialized heavy workshop for borewell rig repair, lathe works, structural welding, drilling rod threading, and high-pressure compressor service." />
+  <meta name="keywords" content="Nathan, Sri Vellingiri Works, borewell rig repair, lathe works, welding workshop, drilling rod threading, compressor servicing, engineering works, Namakkal, Tiruchengode, Tamil Nadu" />
+  <meta name="author" content="Sri Vellingiri Engineering Works - Nathan" />
+  
+  <title>Sri Vellingiri Engineering Works | Nathan | Borewell Rig & Workshop Services</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Anti-Flicker Instant Theme Restoration -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('sri_vellingiri_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Top Action & Contact Bar -->
+  <div class="top-bar py-2 d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <span><i class="bi bi-person-fill text-warning me-1"></i> <span data-i18n="topbar_proprietor"><strong class="text-white">Nathan</strong> (Proprietor)</span></span>
+        <span class="text-white-50">|</span>
+        <span><i class="bi bi-geo-alt-fill text-warning me-1"></i> <span data-i18n="topbar_location">Tiruchengode / Namakkal Highway, Tamil Nadu</span></span>
+        <span><i class="bi bi-clock-fill text-warning me-1"></i> <span data-i18n="topbar_hours">Mon - Sat: 8 AM - 9 PM</span></span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="tel:+919344604042" class="fw-bold text-white"><i class="bi bi-telephone-fill me-1 text-warning"></i> <span data-i18n="topbar_call">Nathan: 93446 04042</span></a>
+        <span class="text-white-50">|</span>
+        <a href="https://wa.me/919344604042" target="_blank" class="fw-bold text-success"><i class="bi bi-whatsapp me-1"></i> <span data-i18n="nav_whatsapp_btn">WhatsApp</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img src="assets/images/logo.png" alt="Sri Vellingiri Engineering Works" class="brand-logo-img" />
+      </a>
+
+      <!-- Mobile Controls & Toggle -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="theme-toggle-btn" id="themeToggleBtnMobile" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Light/Dark Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <select class="lang-selector form-select-sm" id="langSelectMobile" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="ta">தமிழ்</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" data-i18n="nav_home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-i18n="nav_about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services" data-i18n="nav_services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery" data-i18n="nav_gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service-request" data-i18n="nav_request">Service Request</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-i18n="nav_contact">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Right Side: Language Switcher & Action Buttons -->
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button class="theme-toggle-btn d-none d-lg-inline-flex me-1" id="themeToggleBtn" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Light/Dark Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <div class="d-none d-lg-block me-1">
+            <select class="lang-selector" id="langSelect" aria-label="Select Language">
+              <option value="en">🇬🇧 English</option>
+              <option value="ta">🇮🇳 தமிழ்</option>
+              <option value="hi">🇮🇳 हिन्दी</option>
+            </select>
+          </div>
+
+          <a href="tel:+919344604042" class="btn btn-sm btn-call-custom text-nowrap">
+            <i class="bi bi-telephone-fill"></i> <span data-i18n="nav_call_btn">Nathan: 93446 04042</span>
+          </a>
+
+          <a href="https://wa.me/919344604042?text=Hello%20Sri%20Vellingiri%20Engineering%20Works,%20I%20have%20an%20engineering/borewell%20service%20inquiry." target="_blank" class="btn btn-sm btn-whatsapp-custom text-nowrap" id="navWhatsappBtn">
+            <i class="bi bi-whatsapp"></i>
+            <span data-i18n="nav_whatsapp_btn">WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. HOME / HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center g-4">
+        <!-- Hero Left Content -->
+        <div class="col-lg-7">
+          <div class="hero-badge-industrial">
+            <i class="bi bi-person-fill text-warning"></i>
+            <span data-i18n="hero_badge">Nathan: 93446 04042 | Borewell Engineering Workshop</span>
+          </div>
+          
+          <h1 class="hero-title" data-i18n="hero_title">
+            Precision Borewell Rig Repair & Heavy Workshop Services
+          </h1>
+
+          <p class="hero-lead" data-i18n="hero_desc">
+            Specialized in heavy lathe turning, rig structural welding, hydraulic cylinder overhauls, drilling rod threading, and high-pressure compressor maintenance. Managed with decades of practical field expertise by Nathan.
+          </p>
+
+          <!-- CTAs -->
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a href="#service-request" class="btn btn-primary-custom" data-i18n="hero_btn_request">
+              <i class="bi bi-tools me-1"></i> Book Service / Get Estimate
+            </a>
+            <a href="tel:+919344604042" class="btn btn-call-custom" data-i18n="hero_btn_call_nathan">
+              <i class="bi bi-telephone-fill"></i> Nathan: 93446 04042
+            </a>
+            <a href="https://wa.me/919344604042?text=Hello%20Nathan,%20I%20need%20borewell%20workshop%20service%20details." target="_blank" class="btn btn-whatsapp-custom" data-i18n="hero_btn_whatsapp">
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+
+          <!-- Grounded Workshop Stats -->
+          <div class="hero-stats-card">
+            <div class="row g-2">
+              <div class="col-3 hero-stat-item">
+                <div class="hero-stat-number">20+</div>
+                <div class="hero-stat-label" data-i18n="hero_stat_exp">Years Exp</div>
+              </div>
+              <div class="col-3 hero-stat-item">
+                <div class="hero-stat-number">1000+</div>
+                <div class="hero-stat-label" data-i18n="hero_stat_rigs">Rigs Serviced</div>
+              </div>
+              <div class="col-3 hero-stat-item">
+                <div class="hero-stat-number">4.5"/6"</div>
+                <div class="hero-stat-label" data-i18n="hero_stat_rods">Rod Threading</div>
+              </div>
+              <div class="col-3 hero-stat-item">
+                <div class="hero-stat-number">100%</div>
+                <div class="hero-stat-label" data-i18n="hero_stat_trust">Field Ready</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Graphic Box -->
+        <div class="col-lg-5">
+          <div class="hero-image-box position-relative">
+            <img src="assets/images/Complete Borewel/sri vellingiri 1.png" alt="Sri Vellingiri Workshop Rig Bay" class="img-fluid rounded" onerror="this.src='assets/images/service-rig.svg'" />
+            <div class="hero-image-overlay p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-warning text-dark fw-bold"><i class="bi bi-person-badge-fill me-1"></i> <span data-i18n="hero_badge_proprietor">Proprietor: Nathan</span></span>
+                <span class="badge bg-success text-white px-2 py-1"><i class="bi bi-check-circle me-1"></i> <span data-i18n="hero_badge_status">Open & Active</span></span>
+              </div>
+              <div class="fw-bold text-white small mb-1"><i class="bi bi-gear-wide-connected text-warning me-1"></i> Sri Vellingiri Workshop Rig Bay</div>
+              <div class="d-flex justify-content-start align-items-center text-white small">
+                <div><i class="bi bi-telephone-fill text-warning me-1"></i> <span data-i18n="hero_direct_line">Direct Line:</span> <strong>+91 93446 04042</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Action Strip -->
+  <div class="action-strip">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <div class="d-flex align-items-center gap-3">
+        <i class="bi bi-wrench-adjustable-circle text-warning fs-3"></i>
+        <div>
+          <span class="action-strip-text d-block" data-i18n="strip_title">Need urgent lathe works, rod threading or rig cylinder servicing?</span>
+          <span class="text-muted small" data-i18n="strip_desc">Contact <strong>Nathan (+91 93446 04042)</strong> directly for fast workshop service.</span>
+        </div>
+      </div>
+      <div class="d-flex gap-2">
+        <a href="tel:+919344604042" class="btn btn-sm btn-primary-custom"><i class="bi bi-telephone-fill me-1"></i> <span data-i18n="strip_btn_call">Call Nathan: 93446 04042</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. ABOUT US SECTION -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- About Left Description -->
+        <div class="col-lg-6">
+          <span class="section-badge" data-i18n="about_badge">About Our Workshop</span>
+          <h2 class="mb-3" data-i18n="about_title">Practical Engineering & Borewell Rig Maintenance</h2>
+          <p class="lead text-secondary mb-3" data-i18n="about_lead">
+            Sri Vellingiri Engineering Works, founded and managed by Nathan, is a dedicated heavy mechanical workshop specializing in complete borewell rig repairs, lathe works, structural welding, and drill pipe engineering.
+          </p>
+          <p class="text-muted mb-3" data-i18n="about_p1">
+            Located in the heart of the borewell operational belt, our workshop is outfitted with heavy bed center lathes, hydraulic presses, precision boring tools, and high-capacity welding units. We understand the demanding conditions under which drilling contractors operate and provide prompt, heavy-duty engineering solutions.
+          </p>
+          <p class="text-muted mb-4" data-i18n="about_p2">
+            From single drill rod thread restoration to complete rig mast rebuilds and compressor servicing, every job is handled by skilled machinists and certified welders under Nathan's direct technical supervision using industrial-grade materials and strict dimensional checks.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#services" class="btn btn-outline-custom" data-i18n="about_btn_services">Explore Our Services</a>
+            <a href="#contact" class="btn btn-primary-custom" data-i18n="about_btn_contact">Contact Workshop</a>
+          </div>
+        </div>
+
+        <!-- About Right Feature Grid -->
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="about-feature-box">
+                <div class="about-feature-icon">
+                  <i class="bi bi-gear-fill"></i>
+                </div>
+                <h4 class="about-feature-title" data-i18n="about_feat_1_title">Heavy-Duty Machinery</h4>
+                <p class="about-feature-desc" data-i18n="about_feat_1_desc">Equipped with large center lathes, overhead cranes, and hydraulic tools for handling heavy rig components.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="about-feature-box">
+                <div class="about-feature-icon">
+                  <i class="bi bi-hammer"></i>
+                </div>
+                <h4 class="about-feature-title" data-i18n="about_feat_2_title">Practical Workmanship</h4>
+                <p class="about-feature-desc" data-i18n="about_feat_2_desc">Decades of hands-on experience resolving field wear, thread galling, and structural stresses.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="about-feature-box">
+                <div class="about-feature-icon">
+                  <i class="bi bi-stopwatch-fill"></i>
+                </div>
+                <h4 class="about-feature-title" data-i18n="about_feat_3_title">Prompt Turnaround</h4>
+                <p class="about-feature-desc" data-i18n="about_feat_3_desc">Fast service to minimize drilling rig downtime and keep field operations running smoothly.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="about-feature-box">
+                <div class="about-feature-icon">
+                  <i class="bi bi-cash-stack"></i>
+                </div>
+                <h4 class="about-feature-title" data-i18n="about_feat_4_title">Honest & Direct Service</h4>
+                <p class="about-feature-desc" data-i18n="about_feat_4_desc">Clear estimates, transparent communication, and genuine mechanical repair without unnecessary costs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVICES SECTION -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="section-badge" data-i18n="services_badge">Our Core Services</span>
+        <h2 class="mb-2" data-i18n="services_title">Complete Borewell & Workshop Solutions</h2>
+        <p class="text-secondary" data-i18n="services_desc">
+          We provide comprehensive mechanical, machining, and fabrication services for truck-mounted, tractor-mounted, and crawler borewell rigs.
+        </p>
+      </div>
+
+      <!-- Dynamic Services Cards Grid (Rendered via API + MongoDB) -->
+      <div class="row g-4" id="servicesContainer">
+        <div class="col-12 text-center py-5">
+          <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Loading services...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. GALLERY SECTION -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <span class="section-badge" data-i18n="gallery_badge">Workshop Portfolio</span>
+        <h2 class="mb-2" data-i18n="gallery_title">Recent Workshop & Field Work</h2>
+        <p class="text-secondary" data-i18n="gallery_desc">
+          Take a look at our lathe operations, welding fabrications, rig maintenance bays, drill rods, and compressor service works.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills & Owner Action Button -->
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+        <div class="gallery-filters mb-0">
+          <button class="filter-btn active" data-filter="all" data-i18n="gallery_filter_all">All Work</button>
+          <button class="filter-btn" data-filter="workshop" data-i18n="gallery_filter_workshop">Workshop Floor</button>
+          <button class="filter-btn" data-filter="welding" data-i18n="gallery_filter_welding">Welding Work</button>
+          <button class="filter-btn" data-filter="rig" data-i18n="gallery_filter_rig">Borewell Rigs</button>
+          <button class="filter-btn" data-filter="drilling_rods" data-i18n="gallery_filter_drilling_rods">Drilling Rods</button>
+          <button class="filter-btn" data-filter="compressor" data-i18n="gallery_filter_compressor">Compressors</button>
+        </div>
+        <div class="owner-gallery-actions">
+          <button type="button" class="btn btn-sm btn-outline-warning text-dark fw-bold shadow-sm" id="ownerPortalBtn" data-i18n="owner_portal_btn">
+            <i class="bi bi-shield-lock-fill text-warning me-1"></i> Owner Portal
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Gallery Grid (Rendered via API + MongoDB) -->
+      <div class="row g-4" id="galleryContainer">
+        <div class="col-12 text-center py-5">
+          <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Loading gallery photos...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SERVICE REQUEST SECTION -->
+  <section id="service-request" class="request-section">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <!-- Left Column: Form -->
+        <div class="col-lg-7">
+          <div class="request-card">
+            <span class="section-badge" data-i18n="request_badge">Direct Service Booking</span>
+            <h2 class="mb-2" data-i18n="request_title">Submit a Service Request</h2>
+            <p class="text-secondary small mb-4" data-i18n="request_desc">
+              Fill in your details and required service below. Nathan and our workshop team will review your requirement and call you back promptly.
+            </p>
+
+            <form id="serviceRequestForm">
+              <div class="row g-3">
+                <!-- Customer Name -->
+                <div class="col-md-6">
+                  <label for="customerName" class="form-label" data-i18n="form_name_label">Your Full Name *</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light text-muted"><i class="bi bi-person-fill"></i></span>
+                    <input type="text" class="form-control" id="customerName" placeholder="Enter your full name" required data-i18n-placeholder="form_name_placeholder" />
+                  </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="col-md-6">
+                  <label for="phone" class="form-label" data-i18n="form_phone_label">Mobile / Phone Number *</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light text-muted"><i class="bi bi-telephone-fill"></i></span>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter mobile / phone number" required data-i18n-placeholder="form_phone_placeholder" />
+                  </div>
+                </div>
+
+                <!-- Required Service -->
+                <div class="col-12">
+                  <label for="serviceRequired" class="form-label" data-i18n="form_service_label">Select Required Service *</label>
+                  <select class="form-select" id="serviceRequired" required>
+                    <option value="" disabled selected data-i18n="form_service_select_default">-- Choose Service --</option>
+                    <option value="lathe-works" data-i18n="form_service_opt_lathe">Heavy Lathe Works & Spindle Machining</option>
+                    <option value="welding-works" data-i18n="form_service_opt_welding">Rig Welding & Mast Fabrication</option>
+                    <option value="borewell-rig-service" data-i18n="form_service_opt_rig">Borewell Rig Overhaul & Hydraulics</option>
+                    <option value="drilling-rod-works" data-i18n="form_service_opt_rods">Drilling Rod Threading & Straightening</option>
+                  </select>
+                </div>
+
+                <!-- Message / Details -->
+                <div class="col-12">
+                  <label for="message" class="form-label" data-i18n="form_message_label">Describe the Issue / Requirement</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Please describe the problem or requirement..." data-i18n-placeholder="form_message_placeholder"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary-custom w-100 py-3 fs-6" id="submitBtn">
+                    <span id="submitBtnText">
+                      <i class="bi bi-send-fill me-2"></i>
+                      <span data-i18n="form_submit_btn">Submit Service Request</span>
+                    </span>
+                    <span id="submitBtnLoading" class="d-none">
+                      <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                      Sending...
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Alert Placeholder -->
+            <div id="formAlert" class="alert d-none mt-3 mb-0" role="alert"></div>
+          </div>
+        </div>
+
+        <!-- Right Column: Workshop Direct Details -->
+        <div class="col-lg-5">
+          <div class="request-info-side">
+            <h3 class="request-info-title" data-i18n="req_side_title">Direct Proprietor Supervision</h3>
+            <p class="text-white-50 small mb-4" data-i18n="req_side_desc">
+              Nathan personally inspects and oversees lathe machining, rod threading tolerances, and rig structural overhauls.
+            </p>
+
+            <div class="request-info-item">
+              <div class="request-info-icon"><i class="bi bi-person-badge-fill"></i></div>
+              <div>
+                <h5 class="text-white mb-1" data-i18n="req_item1_title">Proprietor: Nathan</h5>
+                <p class="text-white-50 small mb-0" data-i18n="req_item1_desc">Decades of practical experience in borewell rig mechanics & workshop machining.</p>
+              </div>
+            </div>
+
+            <div class="request-info-item">
+              <div class="request-info-icon"><i class="bi bi-person-fill-check"></i></div>
+              <div>
+                <h5 class="text-white mb-1"><span data-i18n="req_item_kumar_title">Kumar:</span> <a href="tel:+919965219385" class="text-warning text-decoration-none">+91 99652 19385</a></h5>
+                <p class="text-white-50 small mb-0" data-i18n="req_item_kumar_desc">Workshop management, service coordination & direct customer support.</p>
+              </div>
+            </div>
+
+            <div class="request-info-item">
+              <div class="request-info-icon"><i class="bi bi-gear-wide-connected"></i></div>
+              <div>
+                <h5 class="text-white mb-1" data-i18n="req_item2_title">Heavy Precision Lathes</h5>
+                <p class="text-white-50 small mb-0" data-i18n="req_item2_desc">Standard and custom API threads cut to exact tolerances with pitch gauge accuracy.</p>
+              </div>
+            </div>
+
+            <div class="request-info-item">
+              <div class="request-info-icon"><i class="bi bi-truck-front-fill"></i></div>
+              <div>
+                <h5 class="text-white mb-1" data-i18n="req_item3_title">Emergency Breakdown Assistance</h5>
+                <p class="text-white-50 small mb-0" data-i18n="req_item3_desc">Priority repair support for stalled drilling rigs to minimize daily rig losses.</p>
+              </div>
+            </div>
+
+            <div class="p-3 bg-dark rounded border border-warning mt-4">
+              <span class="text-warning small fw-bold d-block mb-2"><i class="bi bi-telephone-outbound-fill me-1"></i> <span data-i18n="req_direct_contact">Direct Contact:</span></span>
+              <div class="d-flex flex-column gap-2">
+                <a href="tel:+919344604042" class="text-white fw-bold fs-5 text-decoration-none"><i class="bi bi-telephone-fill text-warning me-2"></i> Nathan: +91 93446 04042</a>
+                <a href="tel:+919965219385" class="text-white fw-bold fs-5 text-decoration-none"><i class="bi bi-telephone-fill text-warning me-2"></i> Kumar: +91 99652 19385</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="section-badge" data-i18n="contact_badge">Get in Touch</span>
+        <h2 class="mb-2" data-i18n="contact_title">Contact Nathan / Visit Our Workshop</h2>
+        <p class="text-secondary" data-i18n="contact_desc">
+          Have a query or need urgent rig repairs? Reach out to Nathan directly or visit our workshop during working hours.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Contact Card: Nathan -->
+        <div class="col-lg-6 col-md-6">
+          <div class="contact-card border-warning h-100">
+            <div class="contact-icon-box">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <h4 class="h5 fw-bold mb-1" data-i18n="contact_partner_nathan">NATHAN</h4>
+            <span class="badge bg-warning text-dark fw-bold mb-2" data-i18n="contact_proprietor_role">Proprietor / Workshop Head</span>
+            <p class="mb-3"><a href="tel:+919344604042" class="fw-bold fs-3 text-dark text-decoration-none">+91 93446 04042</a></p>
+            <div class="d-flex gap-2">
+              <a href="tel:+919344604042" class="btn btn-call-custom flex-grow-1"><i class="bi bi-telephone-fill me-1"></i> <span data-i18n="contact_call_btn">Call Nathan</span></a>
+              <a href="https://wa.me/919344604042" target="_blank" class="btn btn-whatsapp-custom flex-grow-1"><i class="bi bi-whatsapp me-1"></i> <span data-i18n="contact_whatsapp_text">WhatsApp</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workshop Address Card -->
+        <div class="col-lg-6 col-md-6">
+          <div class="contact-card h-100">
+            <div class="contact-icon-box" style="background-color: #fef3c7; color: #d97706;">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <h4 class="h5 fw-bold mb-2" data-i18n="contact_address_title">Workshop Address</h4>
+            <p class="text-secondary small mb-3" data-i18n="contact_address_val">
+              Sri Vellingiri Engineering Works, SF No. 142/2, Main Road, Near Industrial Estate, Tiruchengode / Namakkal Highway, Tamil Nadu - 637211, India.
+            </p>
+            <span class="badge bg-light text-dark border p-2 d-block text-start">
+              <i class="bi bi-clock-history me-1 text-primary"></i>
+              <strong data-i18n="contact_hours_title">Working Hours:</strong> Mon - Sat: 8 AM - 9 PM
+            </span>
+          </div>
+        </div>
+
+        <!-- Embedded Google Maps Representation -->
+        <div class="col-12 mt-3">
+          <div class="map-container">
+            <iframe 
+              title="Sri Vellingiri Engineering Works Location"
+              src="https://maps.google.com/maps?q=Tiruchengode%20Namakkal%20Tamil%20Nadu&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Footer Column 1: Brand -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <img src="assets/images/logo.png" alt="Sri Vellingiri Engineering Works" style="height: 56px; width: auto; border-radius: 6px; background: #ffffff; padding: 2px;" />
+            <div>
+              <h3 class="footer-brand-title mb-0 fs-5" data-i18n="nav_brand_title">Sri Vellingiri Engineering Works</h3>
+              <p class="text-warning fw-bold small mb-0" data-i18n="footer_proprietor">Proprietor: NATHAN</p>
+            </div>
+          </div>
+          <p class="small text-white-50 mb-3 mt-2" data-i18n="footer_tagline">
+            Dedicated engineering and machine workshop service for borewell rigs, drill rods, and heavy industrial machinery.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="tel:+919344604042" class="btn btn-sm btn-call-custom"><i class="bi bi-telephone-fill me-1"></i> <span data-i18n="nav_call_btn">Nathan: 93446 04042</span></a>
+            <a href="https://wa.me/919344604042" target="_blank" class="btn btn-sm btn-whatsapp-custom"><i class="bi bi-whatsapp"></i> <span data-i18n="nav_whatsapp_btn">WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- Footer Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading" data-i18n="footer_quick_links">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+            <li><a href="#service-request" data-i18n="nav_request">Service Request</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-heading" data-i18n="footer_services_list">Workshop Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" data-i18n="form_service_opt_lathe">Lathe Works</a></li>
+            <li><a href="#services" data-i18n="form_service_opt_welding">Welding & Fabrication</a></li>
+            <li><a href="#services" data-i18n="form_service_opt_rig">Borewell Rig Service</a></li>
+            <li><a href="#services" data-i18n="form_service_opt_rods">Drilling Rod Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 4: Contact & Hours -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading" data-i18n="footer_contact_info">Workshop Location</h4>
+          <p class="small text-white-50 mb-2" data-i18n="topbar_location">
+            Tiruchengode / Namakkal Highway, Tamil Nadu
+          </p>
+          <p class="small text-white fw-bold mb-2">
+            <i class="bi bi-telephone-fill text-warning me-1"></i> Nathan: +91 93446 04042
+          </p>
+          <p class="small text-white-50 mb-0">
+            <i class="bi bi-clock-fill text-warning me-1"></i> <span data-i18n="footer_hours_text">8:00 AM - 9:00 PM (Mon - Sat)</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center text-white-50">
+        <span data-i18n="footer_copyright">© Sri Vellingiri Engineering Works. All rights reserved.</span>
+        <div class="d-flex align-items-center gap-3">
+          <span data-i18n="footer_developer_note">Designed with Node.js, Express, MongoDB & Bootstrap.</span>
+          <span class="text-white-50">|</span>
+          <a href="#" id="ownerFooterLink" class="text-warning text-decoration-none small fw-bold"><i class="bi bi-shield-lock-fill me-1"></i> <span data-i18n="footer_owner_portal">Owner Portal (Management)</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Gallery Photo Preview -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="modalGalleryTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header bg-dark text-white border-bottom border-secondary">
+          <div>
+            <span class="badge bg-warning text-dark me-2" id="modalGalleryCat">Workshop</span>
+            <h5 class="modal-title d-inline fw-bold" id="modalGalleryTitle">Photo Preview</h5>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark text-center">
+          <img src="" id="modalGalleryImg" alt="Gallery Photo" class="img-fluid w-100" style="max-height: 520px; object-fit: contain;" />
+        </div>
+        <div class="modal-footer bg-light justify-content-between">
+          <p class="text-secondary small mb-0" id="modalGalleryDesc"></p>
+          <a href="#service-request" class="btn btn-sm btn-primary-custom" data-bs-dismiss="modal" data-i18n="service_request_btn">Request This Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Owner PIN Login -->
+  <div class="modal fade" id="ownerLoginModal" tabindex="-1" aria-labelledby="ownerLoginTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header bg-navy text-white">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-shield-lock-fill text-warning fs-5"></i>
+            <h5 class="modal-title fw-bold fs-6" id="ownerLoginTitle" data-i18n="modal_owner_auth">Owner Authentication</h5>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="small text-muted mb-3" data-i18n="modal_owner_pin_prompt">Please enter your workshop Owner PIN to manage gallery photos.</p>
+          <form id="ownerLoginForm">
+            <div class="mb-3">
+              <label for="ownerPinInput" class="form-label fw-bold small" data-i18n="modal_owner_pin_label">Owner Secret PIN</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-key-fill text-muted"></i></span>
+                <input type="password" class="form-control" id="ownerPinInput" placeholder="Enter Owner PIN" maxlength="12" required autofocus autocomplete="off" />
+                <button class="btn btn-outline-secondary" type="button" id="togglePinVisibility">
+                  <i class="bi bi-eye" id="pinEyeIcon"></i>
+                </button>
+              </div>
+            </div>
+            <div id="loginAlert" class="alert alert-danger py-2 small d-none" role="alert"></div>
+            <button type="submit" class="btn btn-primary-custom w-100 fw-bold" id="ownerLoginSubmitBtn">
+              <i class="bi bi-unlock-fill me-1"></i> <span data-i18n="modal_owner_unlock_btn">Unlock Dashboard</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Owner Gallery Management Dashboard -->
+  <div class="modal fade" id="ownerGalleryModal" tabindex="-1" aria-labelledby="ownerGalleryModalTitle" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header bg-navy text-white d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-images text-warning fs-4"></i>
+            <div>
+              <h5 class="modal-title fw-bold mb-0" id="ownerGalleryModalTitle">Owner Work Gallery Portal</h5>
+              <small class="text-warning" id="ownerSessionLabel">Logged in as: Owner</small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <button type="button" class="btn btn-sm btn-outline-light" id="ownerLogoutBtn">
+              <i class="bi bi-box-arrow-right me-1"></i> Logout
+            </button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body p-0">
+          <!-- Navigation Tabs -->
+          <ul class="nav nav-tabs owner-portal-tabs px-3 pt-3 bg-light" id="ownerPortalTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active fw-bold" id="upload-tab" data-bs-toggle="tab" data-bs-target="#uploadTabPane" type="button" role="tab" aria-selected="true">
+                <i class="bi bi-cloud-arrow-up-fill me-1 text-primary"></i> Upload New Work Photo
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fw-bold" id="manage-tab" data-bs-toggle="tab" data-bs-target="#manageTabPane" type="button" role="tab" aria-selected="false">
+                <i class="bi bi-grid-3x3-gap-fill me-1 text-warning"></i> Manage All Photos (<span id="ownerPhotoCount">0</span>)
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content p-4" id="ownerPortalTabContent">
+            <!-- TAB 1: Upload Photo -->
+            <div class="tab-pane fade show active" id="uploadTabPane" role="tabpanel" aria-labelledby="upload-tab">
+              <form id="ownerUploadForm">
+                <div class="row g-4">
+                  <!-- Left: File Upload & Preview -->
+                  <div class="col-lg-5">
+                    <label class="form-label fw-bold">Select Work Photo *</label>
+                    <div class="upload-dropzone text-center p-4 rounded-3 border-2 border-dashed" id="uploadDropzone">
+                      <div id="dropzonePlaceholder">
+                        <i class="bi bi-camera-fill text-warning fs-1 mb-2 d-block"></i>
+                        <h6 class="fw-bold mb-1">Click to select photo or drag here</h6>
+                        <p class="text-muted small mb-3">Supports JPG, PNG, WEBP (Max 15MB)</p>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.getElementById('workPhotoFile').click()">
+                          <i class="bi bi-folder2-open me-1"></i> Browse Files
+                        </button>
+                      </div>
+                      <div id="dropzonePreview" class="d-none">
+                        <img src="" id="photoPreviewImg" alt="Preview" class="img-fluid rounded-2 mb-2 shadow-sm" style="max-height: 220px; object-fit: cover;" />
+                        <div>
+                          <span class="badge bg-secondary mb-2" id="photoFileName">filename.jpg</span>
+                          <br />
+                          <button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" id="removeSelectedPhotoBtn">
+                            <i class="bi bi-x-circle me-1"></i> Change Photo
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="file" id="workPhotoFile" name="photo" accept="image/png, image/jpeg, image/jpg, image/webp" class="d-none" required />
+                  </div>
+
+                  <!-- Right: Work Details -->
+                  <div class="col-lg-7">
+                    <div class="row g-3">
+                      <!-- Work Type / Category -->
+                      <div class="col-md-6">
+                        <label for="workCategory" class="form-label fw-bold">Work Type / Category *</label>
+                        <input type="text" class="form-control" id="workCategory" name="category" list="workCategorySuggestions" placeholder="Select or type category (Lathe, Welding, Rig...)" required />
+                        <datalist id="workCategorySuggestions">
+                          <option value="Heavy Lathe Works (Workshop Floor)"></option>
+                          <option value="Rig Welding & Fabrication"></option>
+                          <option value="Pipe Welding & Structural Work"></option>
+                          <option value="Borewell Rig Overhaul & Service"></option>
+                          <option value="Drilling Rod Works & Threading"></option>
+                          <option value="High-Pressure Compressor Works"></option>
+                          <option value="Rig Maintenance & Breakdown Support"></option>
+                        </datalist>
+                      </div>
+
+                      <!-- Work Title -->
+                      <div class="col-md-6">
+                        <label for="workTitle" class="form-label fw-bold">Work Title *</label>
+                        <input type="text" class="form-control" id="workTitle" name="title" placeholder="Enter work title" required />
+                      </div>
+
+                      <!-- Short Description -->
+                      <div class="col-12">
+                        <label for="workDescription" class="form-label fw-bold">Short Work Description (Optional)</label>
+                        <textarea class="form-control" id="workDescription" name="description" rows="3" placeholder="Enter brief description of work done..."></textarea>
+                        <div class="form-text">This will be visible to customers when they click the photo in the gallery.</div>
+                      </div>
+
+                      <!-- Status / Alert Box -->
+                      <div class="col-12">
+                        <div id="uploadAlert" class="alert d-none py-2 small mb-0" role="alert"></div>
+                      </div>
+
+                      <!-- Submit Button -->
+                      <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-primary-custom px-4 fw-bold" id="uploadSubmitBtn">
+                          <i class="bi bi-cloud-arrow-up-fill me-1"></i> Upload &amp; Publish to Gallery
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- TAB 2: Manage Photos -->
+            <div class="tab-pane fade" id="manageTabPane" role="tabpanel" aria-labelledby="manage-tab">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="fw-bold small text-muted">Filter by Type:</span>
+                  <select class="form-select form-select-sm w-auto" id="adminFilterSelect">
+                    <option value="all">All Photos</option>
+                    <option value="workshop">Workshop Floor / Lathe</option>
+                    <option value="welding">Welding & Fabrication</option>
+                    <option value="rig">Borewell Rigs</option>
+                    <option value="drilling_rods">Drilling Rods</option>
+                    <option value="compressor">Compressors</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline-secondary" id="refreshOwnerPhotosBtn">
+                  <i class="bi bi-arrow-clockwise me-1"></i> Refresh List
+                </button>
+              </div>
+
+              <!-- Owner Photos Table / Grid -->
+              <div class="table-responsive" style="max-height: 480px;">
+                <table class="table table-dark table-hover align-middle mb-0">
+                  <thead class="table-dark">
+                    <tr>
+                      <th style="width: 90px;">Photo</th>
+                      <th>Work Title</th>
+                      <th>Category</th>
+                      <th>Description</th>
+                      <th class="text-end" style="width: 140px;">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ownerPhotosTableBody">
+                    <tr>
+                      <td colspan="5" class="text-center py-4 text-muted">Loading photos...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Edit Work Photo Metadata -->
+  <div class="modal fade" id="editGalleryModal" tabindex="-1" aria-labelledby="editGalleryModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header bg-navy text-white">
+          <h5 class="modal-title fw-bold" id="editGalleryModalTitle">Edit Work Photo Details</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="editGalleryForm">
+            <input type="hidden" id="editItemId" />
+            <div class="mb-3 text-center">
+              <img src="" id="editItemPreview" alt="Item Preview" class="img-fluid rounded-2 shadow-sm" style="max-height: 150px; object-fit: contain;" />
+            </div>
+            <div class="mb-3">
+              <label for="editWorkCategory" class="form-label fw-bold small">Work Type / Category *</label>
+              <input type="text" class="form-control" id="editWorkCategory" list="workCategorySuggestions" placeholder="Select or type category (Lathe, Welding, Rig...)" required />
+            </div>
+            <div class="mb-3">
+              <label for="editWorkTitle" class="form-label fw-bold small">Work Title *</label>
+              <input type="text" class="form-control" id="editWorkTitle" required />
+            </div>
+            <div class="mb-3">
+              <label for="editWorkDescription" class="form-label fw-bold small">Short Description</label>
+              <textarea class="form-control" id="editWorkDescription" rows="3"></textarea>
+            </div>
+            <div id="editAlert" class="alert d-none py-2 small" role="alert"></div>
+            <div class="d-flex justify-content-end gap-2">
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary-custom btn-sm fw-bold" id="saveEditBtn">
+                <i class="bi bi-check2-circle me-1"></i> Save Changes
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Mobile / Quick Action Buttons -->
+  <div class="floating-actions">
+    <a href="https://wa.me/919344604042?text=Hello%20Sri%20Vellingiri%20Engineering%20Works,%20I%20have%20an%20inquiry." target="_blank" class="floating-btn whatsapp" title="WhatsApp Nathan" aria-label="WhatsApp Chat">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="tel:+919344604042" class="floating-btn call" title="Call Nathan" aria-label="Call Workshop">
+      <i class="bi bi-telephone-fill"></i>
+    </a>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- EmailJS Config (keys) -->
+  <script src="js/emailjs-config.js"></script>
+
+  <!-- Application Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -366,8 +366,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const defaultDesc = currentLang === 'ta'
-        ? 'ஸ்ரீ வெள்ளிங்கிரி இன்ஜினியரிங் ஒர்க்ஸ் நேரடி பட்டறை பணி.'
-        : (currentLang === 'hi' ? 'श्री वेल्लिंगिरी इंजीनियरिंग वर्क्स कस्टम सेवा।' : 'Sri Vellingiri Engineering Works custom service.');
+        ? 'ஸ்ரீ வெள்ளிங்கிரி நாதன் போர்வெல்ஸ் நேரடி பட்டறை பணி.'
+        : (currentLang === 'hi' ? 'श्री वेल्लिंगिरी नाथन बोरवेल्स कस्टम सेवा।' : 'Sri Vellingiri Nathan Borewells custom service.');
 
       return `
         <div class="col-lg-4 col-md-6 mb-4 gallery-card-item" data-category="${item.category}">

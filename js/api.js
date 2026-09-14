@@ -180,10 +180,6 @@ const API = {
       throw err;
     }
   },
-      console.error('API Error deleting gallery item:', err);
-      throw err;
-    }
-  },
 
   // Local fallback data in case DB server is not yet booted
   getLocalServicesFallback() {

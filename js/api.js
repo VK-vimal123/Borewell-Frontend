@@ -1,7 +1,7 @@
 // API Client for Sri Vellingiri Engineering Works
 
 const API = {
-  baseUrl: '/api',
+  baseUrl: (window.EMAILJS_CONFIG && window.EMAILJS_CONFIG.apiBaseUrl) || '/api',
 
   // Check health and MongoDB connection
   async checkHealth() {

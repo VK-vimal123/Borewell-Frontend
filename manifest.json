@@ -1,0 +1,25 @@
+{
+  "name": "Sri Vellingiri Engineering Works",
+  "short_name": "Sri Vellingiri Works",
+  "description": "Proprietor: Nathan. Specialized workshop for borewell rig repairs, heavy lathe turning, welding fabrication, and drill rod threading.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f1d",
+  "theme_color": "#f59e0b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "engineering", "industrial", "productivity"]
+}

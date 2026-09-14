@@ -172,7 +172,22 @@ const translations = {
     modal_owner_auth: "Owner Authentication",
     modal_owner_pin_prompt: "Please enter your workshop Owner PIN to manage gallery photos.",
     modal_owner_pin_label: "Owner Secret PIN",
-    modal_owner_unlock_btn: "Unlock Dashboard"
+    modal_owner_unlock_btn: "Unlock Dashboard",
+
+    // FAQ Section
+    faq_badge: "Common Inquiries",
+    faq_title: "Frequently Asked Questions",
+    faq_desc: "Clear answers regarding our borewell rig engineering, heavy lathe operations, drilling rod threading, and workshop appointments.",
+    faq_q1: "What borewell rig services does Nathan / Sri Vellingiri Engineering Works provide?",
+    faq_a1: "We specialize in complete borewell rig overhauls, heavy lathe turning, spindle & shaft machining, hydraulic mast cylinder overhauls, high-tensile structural welding, 4.5\" and 6\" drilling rod API threading & straightening, and high-pressure compressor maintenance.",
+    faq_q2: "How quickly can emergency breakdown or drilling rod repairs be completed?",
+    faq_a2: "We prioritize urgent breakdown jobs to ensure drilling rigs resume operations quickly. Standard rod threading, adaptor fabrication, and lathe machining are typically completed within 24 to 48 hours.",
+    faq_q3: "Do you machine standard API Regular and IF threads for all drill pipe sizes?",
+    faq_a3: "Yes, our machine shop is equipped with heavy bed lathes and precision pitch gauges to cut and restore 2-7/8\", 3-1/2\", 4-1/2\" API Regular, IF threads, and custom crossover sub-adapters.",
+    faq_q4: "Where is the workshop located and what are the working hours?",
+    faq_a4: "We are located on the Tiruchengode / Namakkal Highway, Tamil Nadu (SF No. 142/2, Near Industrial Estate). Working hours are Monday to Saturday: 8:00 AM to 9:00 PM, with direct phone support on Sundays for urgent breakdowns.",
+    faq_q5: "How can I get a repair cost estimate or book a service?",
+    faq_a5: "You can submit a service booking form on our website or call Proprietor Nathan directly at +91 93446 04042 or Kumar at +91 99652 19385 for immediate quotation."
   },
 
   ta: {
@@ -345,7 +360,22 @@ const translations = {
     modal_owner_auth: "உரிமையாளர் உள்நுழைவு",
     modal_owner_pin_prompt: "புகைப்படங்களை நிர்வகிக்க உங்கள் பட்டறை உரிமையாளர் பின் (PIN) எண்ணை உள்ளிடவும்.",
     modal_owner_pin_label: "உரிமையாளர் ரகசிய பின் (PIN)",
-    modal_owner_unlock_btn: "நிர்வாக தளத்தை திறக்க"
+    modal_owner_unlock_btn: "நிர்வாக தளத்தை திறக்க",
+
+    // FAQ Section
+    faq_badge: "அடிக்கடி கேட்கப்படும் கேள்விகள்",
+    faq_title: "பொதுவான சந்தேகங்களும் பதில்களும்",
+    faq_desc: "எங்கள் பட்டறை சேவைகள், லேத் வேலைகள், ராடு த்ரெட்டிங் மற்றும் நேரடி புக் செய்தல் பற்றிய விவரங்கள்.",
+    faq_q1: "நாதன் / ஸ்ரீ வெள்ளிங்கிரி பட்டறையில் என்னென்ன போர்வெல் சேவைகள் வழங்கப்படுகின்றன?",
+    faq_a1: "கனரக லேத் டர்னிங், ஸ்பிண்டில் மெஷினிங், ரிக் மாஸ்ட் ஆர்க்/எம்ஐஜி வெல்டிங், ஹைட்ராலிக் சிலிண்டர் சீரமைப்பு, 4.5\" மற்றும் 6\" டிரில்லிங் ராடு API த்ரெட் கட்டிங் மற்றும் உயர் அழுத்த கம்ப்ரஸர் பராமரிப்பு சேவைகள் வழங்கப்படுகின்றன.",
+    faq_q2: "அவசர பிரேக்டவுன் மற்றும் டிரில்லிங் ராடு வேலைகள் எவ்வளவு விரைவில் செய்து தரப்படும்?",
+    faq_a2: "டிரில்லிங் தாமதத்தை குறைக்க அவசர வேலைகளுக்கு முன்னுரிமை அளிக்கப்படுகிறது. பொதுவாக ராடு த்ரெட் கட்டிங் மற்றும் லேத் வேலைகள் 24 முதல் 48 மணி நேரத்திற்குள் செய்து தரப்படும்.",
+    faq_q3: "அனைத்து அளவு டிரில்லிங் பைப்புகளுக்கும் API த்ரெட் வெட்டப்படுகிறதா?",
+    faq_a3: "ஆம், எங்கள் பட்டறையில் உள்ள கனரக லேத் இயந்திரங்கள் மற்றும் துல்லியமான கேஜ்கள் மூலம் 2-7/8\", 3-1/2\", 4-1/2\" API Regular, IF த்ரெட் மற்றும் அடாப்டர்கள் தரமாக செய்யப்படுகின்றன.",
+    faq_q4: "பட்டறை எங்கு அமைந்துள்ளது மற்றும் வேலை நேரம் என்ன?",
+    faq_a4: "திருச்செங்கோடு / நாமக்கல் நெடுஞ்சாலை, தமிழ்நாடு (SF No. 142/2, தொழிற்பேட்டை அருகில்) அமைந்துள்ளது. திங்கள் முதல் சனிக்கிழமை வரை காலை 8:00 மணி முதல் இரவு 9:00 மணி வரை செயல்படுகிறது.",
+    faq_q5: "பழுதுபார்ப்பு மதிப்பீடு பெற அல்லது சர்வீஸ் புக் செய்ய என்ன செய்ய வேண்டும்?",
+    faq_a5: "இணையதள படிவத்தில் பதிவு செய்யலாம் அல்லது உரிமையாளர் நாதன் (+91 93446 04042) அல்லது குமார் (+91 99652 19385) அவர்களை நேரடியாக தொடர்பு கொள்ளலாம்."
   },
 
   hi: {
@@ -518,7 +548,22 @@ const translations = {
     modal_owner_auth: "मालिक प्रमाणीकरण",
     modal_owner_pin_prompt: "गैलरी तस्वीरों के प्रबंधन हेतु कृपया अपना वर्कशॉप मालिक पिन दर्ज करें।",
     modal_owner_pin_label: "मालिक गुप्त पिन (PIN)",
-    modal_owner_unlock_btn: "डैशबोर्ड अनलॉक करें"
+    modal_owner_unlock_btn: "डैशबोर्ड अनलॉक करें",
+
+    // FAQ Section
+    faq_badge: "सामान्य प्रश्न",
+    faq_title: "अक्सर पूछे जाने वाले प्रश्न (FAQ)",
+    faq_desc: "हमारी वर्कशॉप, हैवी लेथ कार्य, ड्रिलिंग रॉड थ्रेडिंग और रिग मेंटेनेंस से संबंधित त्वरित उत्तर।",
+    faq_q1: "श्री वेल्लिंगिरी इंजीनियरिंग वर्क्स में कौन-कौन सी मुख्य सेवाएं उपलब्ध हैं?",
+    faq_a1: "हम संपूर्ण बोरवेल रिग ओवरहाल, हैवी लेथ टर्निंग, स्पिंडल मशीनिंग, हाइड्रोलिक सिलेंडर मरम्मत, हाई-टेंसाइल वेल्डिंग, 4.5\" व 6\" ड्रिलिंग रॉड एपीआई थ्रेडिंग और हाई-प्रेशर कंप्रेसर मेंटेनेंस में विशेषज्ञ हैं।",
+    faq_q2: "आपातकालीन ब्रेकडाउन या ड्रिलिंग रॉड रिपेयर कितने समय में पूरी होती है?",
+    faq_a2: "ड्रिलिंग कार्य में रुकावट कम करने के लिए आपातकालीन कार्यों को प्राथमिकता दी जाती है। सामान्य रॉड थ्रेडिंग और लेथ कार्य 24 से 48 घंटों में पूर्ण कर दिए जाते हैं।",
+    faq_q3: "क्या आप सभी प्रकार के ड्रिल पाइप्स के लिए एपीआई थ्रेडिंग करते हैं?",
+    faq_a3: "हाँ, हमारी वर्कशॉप में हैवी सेंटर लेथ्स और प्रिसिजन गेज द्वारा 2-7/8\", 3-1/2\", 4-1/2\" एपीआई रेगुलर, आईएफ थ्रेड्स एवं क्रॉसओवर अडैप्टर सटीक बनाए जाते हैं।",
+    faq_q4: "वर्कशॉप कहाँ स्थित है और कार्य समय क्या है?",
+    faq_a4: "हमारी वर्कशॉप तिरुचेंगोड़े / नमक्कल हाईवे, तमिलनाडु में स्थित है। कार्य समय सोमवार से शनिवार सुबह 8:00 से रात 9:00 बजे तक है।",
+    faq_q5: "सर्विस बुक करने या लागत अनुमान प्राप्त करने के लिए क्या करें?",
+    faq_a5: "आप हमारी वेबसाइट पर सर्विस फॉर्म भर सकते हैं या मालिक नाथन (+91 93446 04042) अथवा कुमार (+91 99652 19385) से सीधे फोन पर बात कर सकते हैं।"
   }
 };
 

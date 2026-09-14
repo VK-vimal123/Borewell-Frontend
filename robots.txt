@@ -1,0 +1,15 @@
+# Robots.txt for Sri Vellingiri Engineering Works
+User-agent: *
+Allow: /
+Allow: /api/services
+Allow: /api/gallery
+
+# Disallow internal owner management API endpoints from indexing
+Disallow: /api/gallery/verify-pin
+Disallow: /api/gallery/upload
+
+# Crawl delay
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://borewell-workshop.vercel.app/sitemap.xml
